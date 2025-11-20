@@ -154,21 +154,15 @@
         // 1. Change the <h1> color
         document.querySelector("h1").style.color = "purple";
 
-        
-
         // 2. Change the background color of the first .human card
           document.querySelector(".human").style.backgroundColor = "purple";
 
-
         // 3. Change the text of the first <h3>
-        document.querySelector("h3").textContent = "Professor Rick";
-
-        
+        document.querySelector("h3").textContent = "Professor Rick";        
 
         // 4. Change the border style of the first image
         document.querySelector("img").style.border = "3px solid red";
-
-  
+ 
         // ===== PHASE 2: Count elements and display info =====
         // Use querySelectorAll() and loops to fill in the values above.
 
@@ -179,14 +173,11 @@
         // 6. Count how many humans there are
           let human_cards = document.querySelectorAll(".human");
           document.querySelector("#humans").textContent = human_cards.length 
- 
- 
+  
         // 7. Count how many aliens there are
             
             let alien_cards = document.querySelectorAll(".alien");
             document.querySelector("#aliens").textContent = alien_cards.length
-
- 
 
         // ===== PHASE 3: Practice with querySelectorAll() loops =====
         // 8. Make all character names uppercase
@@ -196,18 +187,12 @@
          names[i].textContent = names[i].textContent.toUpperCase();
         }
 
-
-
-
-
-
         // 9. Change border color for all aliens
 
           let border_styling = document.querySelectorAll(".alien");
           for (let i = 0; i < border_styling.length; i++) {
          border_styling[i].style.border = border_styling[i].style.border = "3px solid purple"; 
         }
-
 
         // 10. Change opacity for all pictures to 90%
 
@@ -217,15 +202,12 @@
 
         }
 
-
-
         // 11. Give every other card a 5px border
 
         let allCards = document.querySelectorAll(".character-grid .character")
         for (let i = 0; i < allCards.length; i++) {
             if (i % 2 == 0) {
                 allCards[i].style.border = "5px solid black";
-
 
             }
 
